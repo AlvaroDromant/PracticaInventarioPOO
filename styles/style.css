@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'rubi';
+    src: url(/assets/RubikBubbles-Regular.ttf);
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url('/assets/gta.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'rubi';
+    color: white;
+}
+
+.inventory-table-styles {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+    color: white;
+    background: linear-gradient(black, rgb(57, 57, 57)); 
+    
+}
+
+.inventory-table-styles th,
+.inventory-table-styles td {
+    border: 1px solid white;
+    padding: 8px;
+    text-align: center;
+}
+
+.inventory-table-styles th {
+    background-color: #010009;
+}
+
+.inventory-table-styles tr:hover {
+    background-color: black;
+    color: white;
+}
+
+
+.product-form-styles {
+    background: linear-gradient(black, rgb(57, 57, 57));
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    box-shadow: 5px 5px 5px 5px white;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #4e4d4d;
+    border-radius: 3px;
+    color: white;
+    background-color: black;
+    outline: none;
+}
+
+.inputbuscar{
+background: linear-gradient(black, rgb(57, 57, 57)); 
+box-shadow: 2px 2px 2px 2px white;
+}
+
+button {
+    margin: 2%;
+    background-color: #fafafc;
+    color: rgb(3, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 2px 2px 2px 2px #4e4d4d;
+}
+
+button:hover {
+    background-color: #5c5c5d;
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.imagen-a-girar {
+    animation-name: girar; 
+    animation-duration: 3s; 
+    animation-timing-function: linear; 
+    animation-iteration-count: infinite; 
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}
+
+@keyframes enfocar {
+    0%, 100% {
+        text-shadow: 0 0 5px #FF5733;
+    }
+    50% {
+        text-shadow: 0 0 20px #33FF57;
+    }
+}
+
+.titulo-animado {
+    animation-name: enfocar; 
+    animation-duration: 2s; 
+    animation-timing-function: ease-in-out; 
+    animation-iteration-count: infinite; 
+}
+
+h1 {
+    font-size: 40px;
+    color: #333;
+    text-align: center;
+}
+
+
